@@ -1,0 +1,21 @@
+{
+  "name": "enlighten",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camerondubas/slack-webhook-forwarder.git"
+  },
+  "author": "Cameron Dubas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camerondubas/slack-webhook-forwarder/issues"
+  },
+  "homepage": "https://github.com/camerondubas/slack-webhook-forwarder#readme"
+}
