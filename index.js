@@ -16,12 +16,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Static files
-app.use(express.static(__dirname + '/src'));
+app.use(express.static(__dirname + '/dist'));
 
 app.use('/', routes);
 
 app.get('*', function(req, res) {
-    res.sendfile('./src/index.html'); // load our public/index.html file
+    res.sendfile('./dist/index.html'); // load our public/index.html file
 });
 
 app.listen(app.get('port'), () => {
