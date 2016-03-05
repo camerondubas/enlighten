@@ -2,7 +2,7 @@
 
 var express             = require('express');
 var router              = express.Router();
-var MandrillSlackWebhook = require('../models/mandrill-slack-webhook');
+var MandrillSlackWebhook = require('enlighten-mandrill');
 
 router.post('/mandrill', function(req, res, next) {
   console.log('1');

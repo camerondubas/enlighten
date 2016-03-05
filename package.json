@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/camerondubas/slack-webhook-forwarder/issues"
   },
-  "homepage": "https://github.com/camerondubas/slack-webhook-forwarder#readme"
+  "homepage": "https://github.com/camerondubas/slack-webhook-forwarder#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "enlighten-mandrill": "0.0.2",
+    "express": "^4.13.4"
+  }
 }
