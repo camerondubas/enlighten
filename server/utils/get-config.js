@@ -2,7 +2,7 @@
 var fs = require('fs');
 
 const env = process.env.NODE_ENV || "development"
-const configPath = '../.config.js';
+const configPath = '../../.config.js';
 
 if (env === "development") {
   try {
