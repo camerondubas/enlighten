@@ -19,5 +19,21 @@ module.exports = {
         template: 'src/index.html'
       }),
       new ExtractTextPlugin("[hash].css")
-    ]
+    ],
+    devServer: {
+        contentBase: './dist',
+        stats: {
+          modules: false,
+          cached: false,
+          colors: true,
+          chunk: false
+        },
+        proxy: {
+          '/api/*': {
+            target: 'http://localhost:5000/',
+            secure: false
+          }
+        }
+      }
+
 };
