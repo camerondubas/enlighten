@@ -1,9 +1,8 @@
 'use strict';
+import './style/style.scss';
 
 import * as angular from 'angular';
-import demoDir from './content';
 
 angular.module('app',
   [
-    demoDir
   ]);

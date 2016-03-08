@@ -18,11 +18,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Static files
 app.use(express.static(__dirname + '/dist'));
 
-app.use('/', routes);
 
-app.get('*', function(req, res) {
-    res.sendfile('./dist/index.html'); // load our public/index.html file
-});
+app.use('/', routes);
 
 app.listen(app.get('port'), () => {
   console.log('Node app is running on port', app.get('port'));

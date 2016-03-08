@@ -1,0 +1,74 @@
+@import 'reset.scss';
+
+html {
+  height: 100%;
+}
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fbbe2+0,108cbc+100 */
+  background: #4fbbe2; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #4fbbe2 0%, #108cbc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #4fbbe2 0%,#108cbc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #4fbbe2 0%,#108cbc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fbbe2', endColorstr='#108cbc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  height: 100%;
+  font-size: 62.5%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Yeseva One', cursive;
+  color: #fff
+}
+
+p, span {
+  font-size: .9rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  color: #fff
+}
+
+.subheading {
+  font-family: 'Merriweather', serif;
+  font-weight: 100;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.6rem;
+}
+
+
+.main-hero {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+
+  .main-hero-inner {
+    display: table-cell;
+    vertical-align: middle;
+
+    .main-hero-content {
+      border-top: 1px dashed #fff;
+      border-bottom: 1px dashed #fff;
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      clear: both;
+      overflow: auto;
+    }
+    .main-hero-title {
+      float: left;
+      min-width: 50%;
+    }
+    .main-hero-text {
+      float:left;
+      max-width: 50%;
+
+      span {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

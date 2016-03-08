@@ -15,6 +15,9 @@ fs.readdirSync(__dirname)
     router.use(`${API_BASE_URL}/${route}`, require('./' + route));
   });
 
+router.get('/', function(req, res) {
+    res.sendFile('/index.html'); // load our public/index.html file
+});
 
 // Catch 404
 router.use((req, res, next) => res.status(404).send(`<h1>Error 404: Cannot ${req.method} ${req.url}.</h1>`));
