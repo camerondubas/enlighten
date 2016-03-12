@@ -1,31 +1,27 @@
 @import 'reset.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
 
 html {
   height: 100%;
 }
 body {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fbbe2+0,108cbc+100 */
-  background: #4fbbe2; /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  #4fbbe2 0%, #108cbc 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  #4fbbe2 0%,#108cbc 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  #4fbbe2 0%,#108cbc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fbbe2', endColorstr='#108cbc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+  @include radial-gradient($secondary-color, darken($secondary-color, 30%));
   height: 100%;
   font-size: 62.5%;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Yeseva One', cursive;
-  color: #fff
+  color: $primary-color;
 }
 
-p, span {
+p, span, button, .btn {
   font-size: .9rem;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 100;
   margin-bottom: 1rem;
-  color: #fff
+  color: $primary-color;
 }
 
 .subheading {
@@ -34,7 +30,7 @@ p, span {
 }
 
 h1 {
-  color: #fff;
+  color: $primary-color;
   font-size: 3.6rem;
 }
 
@@ -49,8 +45,8 @@ h1 {
     vertical-align: middle;
 
     .main-hero-content {
-      border-top: 1px dashed #fff;
-      border-bottom: 1px dashed #fff;
+      border-top: 1px dashed $primary-color;
+      border-bottom: 1px dashed $primary-color;
       width: 80%;
       max-width: 800px;
       margin: 0 auto;
@@ -67,8 +63,27 @@ h1 {
       max-width: 50%;
 
       span {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
       }
     }
+  }
+}
+
+.octicon {
+  fill: $primary-color;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+button, .btn {
+  background: transparent;
+  border: 2px solid $primary-color;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background: darken($secondary-color, 30%);
   }
 }
