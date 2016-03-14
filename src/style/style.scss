@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6 {
   color: $primary-color;
 }
 
-p, span, button, .btn {
+p, span, button, .btn, label, input {
   font-size: .9rem;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 100;
@@ -102,5 +102,34 @@ button, .btn {
 
   &:hover {
     background: darken($secondary-color, 30%);
+  }
+}
+
+
+.input-group {
+  padding: 0.6rem;
+  label {
+    display: block;
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  input {
+    border: 0;
+    border-bottom: 2px solid $primary-color;
+    background: transparent;
+    padding: 0.4rem 0.4rem 0.2rem 0.4rem;
+    min-width: 30%;
+    transition: all .3s ease-in-out;
+
+
+    &:focus, &:active {
+      outline: 0;
+      border-bottom: 2px solid darken($primary-color, 15%);
+      background: rgba(0,0,0,0.1);
+    }
+  }
+  ::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0;
   }
 }
