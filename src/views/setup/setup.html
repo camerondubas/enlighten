@@ -1,0 +1,23 @@
+<div class="main-hero-title">
+  <form ng-submit="setupCtrl.setupForm()">
+     <h2>Step 1: Setup Mandrill Webhook</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor impedit enim officia, maiores quo nesciunt soluta quidem dolorem, id possimus facere, nisi molestias dicta deserunt earum modi! Quae, inventore voluptatum!</p>
+
+    <div class="input-group">
+      <label for="">Mandrill Webhook Key</label>
+      <input type="text" ng-model="setupCtrl.formData.mandrillKey">
+    </div>
+
+  <h2>Step 2: Setup Slack Incoming Webhook</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae recusandae quod veritatis repellendus accusantium architecto ab cum obcaecati, saepe sit. Facilis molestiae inventore, aspernatur numquam quos neque, maiores. Animi, dignissimos.</p>
+    <div class="input-group">
+      <label for="">Slack Webhook Endpoint</label>
+      <input type="text" ng-model="setupCtrl.formData.slackEndpoint">
+    </div>
+
+
+    <div class="input-group">
+      <button type="submit">Connect The Wires!</button>
+    </div>
+  </form>
+</div>

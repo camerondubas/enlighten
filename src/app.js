@@ -7,13 +7,13 @@ import uiRouter from 'ui-router';
 import routes from './app.routes';
 
 import landingPage from './views/landing';
-import doItYourselfPage from './views/do-it-yourself';
+import setupPage from './views/setup';
 
 angular.module('app',
   [
     uiRouter,
 
     landingPage,
-    doItYourselfPage
+    setupPage
   ])
   .config(routes);

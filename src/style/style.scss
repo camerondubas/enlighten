@@ -30,10 +30,21 @@ p, span, button, .btn {
 }
 
 h1 {
-  color: $primary-color;
   font-size: 3.6rem;
 }
 
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inline-spacer {
+  padding: 0 0.6rem;
+}
 
 .main-hero {
   display: table;
@@ -66,6 +77,11 @@ h1 {
         font-size: 0.6rem;
       }
     }
+    .main-hero-actions {
+    clear: both;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    }
   }
 }
 
@@ -81,6 +97,7 @@ button, .btn {
   border: 2px solid $primary-color;
   padding: 0.7rem;
   cursor: pointer;
+  margin: 0;
   transition: all .3s ease-in-out;
 
   &:hover {

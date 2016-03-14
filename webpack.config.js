@@ -23,6 +23,7 @@ module.exports = {
     ],
     devServer: {
         contentBase: './dist',
+        historyApiFallback: true,
         stats: {
           modules: false,
           cached: false,

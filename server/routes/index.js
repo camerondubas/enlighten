@@ -15,7 +15,7 @@ fs.readdirSync(__dirname)
     router.use(`${API_BASE_URL}/${route}`, require('./' + route));
   });
 
-router.get('*', function(req, res) {
+router.get('/*', function(req, res) {
     console.log('I AM HERE');
 
     res.sendFile('/index.html'); // load our public/index.html file
