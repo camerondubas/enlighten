@@ -11,7 +11,7 @@
     slackWebhookEndpoint: DataTypes.STRING
   });
 
-  MandrillWebhook.sync({force: true});
+  MandrillWebhook.sync();
 
   return MandrillWebhook;
 };
