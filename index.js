@@ -1,14 +1,14 @@
 'use strict';
 
+// Config Setup
+require('./server/utils/get-config');
+
 var express     = require('express');
 var bodyParser  = require('body-parser');
 var routes      = require('./server/routes');
 var models      = require('./server/models');
 
 var app = express();
-
-// Config Setup
-require('./server/utils/get-config');
 
 app.set('port', (process.env.PORT || 5000));
 
