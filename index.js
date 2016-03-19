@@ -3,6 +3,7 @@
 var express     = require('express');
 var bodyParser  = require('body-parser');
 var routes      = require('./server/routes');
+var models      = require('./server/models');
 
 var app = express();
 
